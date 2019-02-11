@@ -1,4 +1,0 @@
-[2019年02月11日  2:42:46] 0 of 1 tests passed
-[2019年02月11日  2:45:41] 0 of 1 tests passed
-[2019年02月11日  2:55:42] 0 of 1 tests passed
-[2019年02月11日  3:13:20] 0 of 1 tests passed
