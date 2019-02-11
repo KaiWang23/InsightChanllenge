@@ -28,8 +28,15 @@ with open(input_dir) as f:
         # skip current line if id/drug_name/drug_cost do not meet requirement
         if not line[id_index] or not line[drug_name_index] or not line[drug_cost_index]:
             continue
+        # drug cost should be numeric
+        try:
+            cost = float(line[drug_cost_index])
+        except ValueError:
+            print('drug cost is not numeric')
+            continue
         # get numerics from cost and convert to floating number
-        cost = float(re.sub("[^\d\.]", "", line[drug_cost_index]))
+        # cost = float(re.sub("[^\d\.]", "", line[drug_cost_index]))
+
         # increment num_prescriber by 1 when a drug appears
         drug_count[line[drug_name_index]] = drug_count.get(line[drug_name_index], 0) + 1
         # add cost to total cost in dictionary
