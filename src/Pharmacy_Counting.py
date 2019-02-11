@@ -28,7 +28,7 @@ with open(input_dir) as f:
 drug_total_cost = OrderedDict(sorted(drug_total_cost.items(), key=lambda x: x[1], reverse=True))
 
 with open(output_dir,'w') as file:
-    file.write('drug_name, num_prescriber,total_cost' + '\n')
+    file.write('drug_name,num_prescriber,total_cost' + '\n')
 
     for key in drug_total_cost:
         file.write(key + ',' + str(drug_count.get(key)) + ',' + str(drug_total_cost.get(key)) + '\n')
