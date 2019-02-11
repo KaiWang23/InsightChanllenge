@@ -4,9 +4,9 @@ import re
 import sys
 from collections import OrderedDict
 
-dir = os.getcwd().split('\\')
-dir = '\\'.join(dir)
-os.chdir(dir)
+# dir = os.getcwd().split('\\')
+# dir = '\\'.join(dir)
+# os.chdir(dir)
 
 args = list(sys.argv)
 input_dir = args[1]
