@@ -10,9 +10,7 @@ To run the code, execute run.sh as an executable. The output of the programs can
 My code uses sys, collection, re, csv libraries
 
 ## Inputs
-My code takes one text input:
-
-itcont.txt
+My code takes one text input: itcont.txt
 
 The code uses five fields from the itcont.txt file, with the following considerations:
 
