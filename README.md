@@ -30,4 +30,6 @@ My code uses the following approach:
 
 * Filter out records that do not satisfy requirement above.
 
+* Consider edge cases where the line might be empty or cost might not be numerics.
+
 * Use dictionaries to store number of prescriber and total cost of drug. Store total_drug_cost as an ordered dictionary sorted by cost in descending order, then output to text file. number of prescriber can be looked up in O(1) time complexity which makes the algorithm efficient even with large amount of records. This program runs in O(n) time complexity where n is number of records.
